@@ -8,8 +8,8 @@ services:
     depends_on:
       - php
     volumes:
-      - ./public:/app/public
-      - ./storage:/app/storage
+      - ./public:/app/app/public
+      - ./storage:/app/app/storage
     ports:
       - 80:80
     networks:
