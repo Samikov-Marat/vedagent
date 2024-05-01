@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context:
+        ./docker/nginx
+    depends_on:
+      - php
+    volumes:
+      - ./public:/app/public
+      - ./storage:/app/storage
+    ports:
+      - 80:80
+    networks:
+      - va
+
+  php:
+    build:
+      context:
+        ./docker/php
+    volumes:
+      - .:/app
+    networks:
+      - va
+
+networks:
+  va:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "false"
+
+
