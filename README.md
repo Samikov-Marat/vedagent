@@ -41,7 +41,7 @@ app/app/Services - Сервисы калькулятора и заказа
 app/config/database.php - добавил тестовую базу
 app/database/factories/CompanyFactory.php - создание тестовой транспортной компании для тестов
 app/public/calculator.js - javascript
-app/public/calculator.js - маршруты
+app/routes/web.php - маршруты
 bootstrap/app.php - отключил csrf для ajax калькулятора
 Тесты:
 app/tests/Feature/CalculateTest.php
