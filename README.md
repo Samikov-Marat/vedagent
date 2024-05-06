@@ -13,6 +13,7 @@ docker compose up
 
 # Установить пакеты
 ```
+docker compose exec php chown www-data:www-data -R /app/app
 docker compose exec -u www-data php  composer install
 ```
 # Запуск тестов
