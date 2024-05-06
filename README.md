@@ -1,3 +1,7 @@
+Docker Compose version v2.22.0-desktop.2  
+Server: Docker Desktop 4.24.2 (124339)
+
+
 # Собрать образы
 ```
 docker compose build
