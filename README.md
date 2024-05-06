@@ -30,3 +30,23 @@ http://127.0.0.1
 127.0.1.1       va.local
 ```
 и использовать http://va.local
+
+# Что изменилось:
+```
+app/app/Dto - DTO для передачи параметров в сервисы
+app/app/Http/Controllers/CalculatorController.php - контроллер
+app/app/Http/Requests - валидация запросов браузера
+app/app/Models - модель Транспортной компании и заказа
+app/app/Services - Сервисы калькулятора и заказа
+app/config/database.php - добавил тестовую базу
+app/database/factories/CompanyFactory.php - создание тестовой транспортной компании для тестов
+app/public/calculator.js - javascript
+app/public/calculator.js - маршруты
+Тесты:
+app/tests/Feature/CalculateTest.php
+app/tests/Feature/OrderTest.php
+app/tests/Unit/CalculateUnitTest.php
+Для докера:
+docker-compose.yml
+docker
+```
