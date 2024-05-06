@@ -10,7 +10,7 @@ docker compose build
 ```
 docker compose up
 ```
-
+# Во втором терминале:
 # Установить пакеты
 ```
 docker compose exec php chown www-data:www-data -R /app/app
